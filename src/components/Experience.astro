@@ -1,0 +1,41 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = 
+[
+    {
+        date: "Enero, 2023 | Septiembre, 2023",
+        title: "Docente de Programación",
+        description: "Creación y desarollo de Smart Kids , programa (Online, Presencial) especializado y unico dirigido a niños de 8-10 años de comunidades rurales, para conectarlos con la tecnología y la programación, fomentando el pensamiento logico y critico mediante la creación de juegos con Scratch",
+        link: "https://goo.su/rv8N",
+        current: false
+    },
+    {
+        date: "Agosto, 2018 | Junio, 2021",
+        title: "iOS Engineer",
+        description: "Implementar metodologias aguiles, participando en la planificación de la Arquitectura (MVC, MVVM, VIPER), participar con el equipo de diseño (UI / UX), peticiones Rest API. Actualización de interfaces (SwiftUI). Trabajar directamente con el equipo de Backend en la estructura de las Base de Datos(MySQL).",
+        current: false
+
+    },
+    {
+        date: "Agosto, 2017",
+        title: "Diseñador UI / UX",
+        description: "Implementación de metodologías (Design Thinking, Design Sprint), onboarding adecuado al usuario, diseño, prototipo y maquetado (Figma, Adobe XD, Sketch), comunicac, Mejorar el tiempo de exito al lograr una mejor interacción, Lograr un diseño contemporaneo y util.",
+        current: false
+    }
+]
+--- 
+
+
+<ol class="relative border-s border-gray-200 ml-4">         
+    {
+        EXPERIENCE.map(experiece =>(
+            <li class="mb-10 ms-10">  
+                <ExperienceItem {...experiece} />
+            </li>
+        ))
+    }         
+   
+
+</ol>
+
