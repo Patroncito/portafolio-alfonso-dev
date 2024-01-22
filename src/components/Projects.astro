@@ -23,16 +23,11 @@ const TAGSICONS = {
 
 }
 
-
-
-
-
-
 const PROJECTS = [
     {
         title: "Dilo con Señas - Aprende Lenguaje de Señas",
         description:"Este proyecto de Swift es una aplicación móvil interactiva diseñada para ayudar a las personas a aprender el lenguaje de señas a través de un juego de quiz y una sección de aprendizaje tipo diccionario.",
-        image: "/public/Projects/ss-1.webp",
+        image: "./public/ss-1.webp",
         github: "https://github.com/Patroncito/manosquehablan",
         tags: [TAGSICONS.SWIFT, TAGSICONS.SWIFTUI, TAGSICONS.SWIFTDATA]
     }
@@ -40,27 +35,26 @@ const PROJECTS = [
 ---
 
 {
-    PROJECTS.map(({ image, title, description, tags})=> (
-        <article>
-            <h3 class="text-xl font-semibold text-blue-200 mb-2">{title}</h3>
-            <p class=" mb-4">{description}</p>
-            <ul class="flex gap-x-2 flex-row mb-4">
-                {tags.map((tag) => (
-                    <li>
-                        <span class={`flex gap-x-2 rounded-full text-xs items-center ${tag.class} py-1 px-2`}>
-                        <tag.icon class="size-4"/>
-                        {tag.name}
-                    </span>
-                    </li>
-                    ))}
-            </ul>
-        
-            <img class="rounded shadow-2xl shadow-white/10" 
-            src={image} 
-            alt="Captura de pantalla del proyecto">
-        </article>
+PROJECTS.map(({ image, title, description, tags }) => (
+  <article class="mb-8 md:mb-12 lg:mb-16">
+    <h3 class="text-xl md:text-xl lg:text-2xl font-semibold text-purple-300 mb-2">{title}</h3>
+    <p class="text-sm md:text-base mb-4">{description}</p>
+    <ul class="flex flex-wrap gap-x-2 mb-4">
+      {tags.map((tag) => (
+        <li>
+          <span class={`flex gap-x-2 rounded-full text-xs md:text-sm items-center ${tag.class} py-1 px-2`}>
+            <tag.icon class="w-4 h-4 md:w-5 md:h-5"/>
+            {tag.name}
+          </span>
+        </li>
+      ))}
+    </ul>
+    <img class="w-full h-auto rounded shadow-2xl shadow-white/10" 
+      src={image} 
+      alt="Captura de pantalla del proyecto"
+    />
+  </article>
+))
 
-
-    ))
 
 }
