@@ -9,6 +9,10 @@ import MailIcon from "../icons/Mail.astro"
 import Experience from "../components/Experience.astro"
 import CodeIcon from "../icons/Code.astro"
 import Projects from '../components/Projects.astro';
+import ContactToMe from '../components/Contact.astro';
+import ProfileCheck from "../icons/ProfileCheck.astro"
+
+
 ---
 
 <Layout 
@@ -18,7 +22,7 @@ description ="Contrata a alfonso patron para crear tus aplicaciones moviles en i
  
     <main class="px-2">
         <SectionContainer class="md:pt-36 sm:py:34 pb-24">
-            <h1 class="text-white text-3xl md:text-4xl lg:text-5xl  font-bold flex flex-row gap-x-4 pb-4" >Hey, soy Alfonso<a class="flex justify-center items-center" href="/src/AlfonsoPatron-CV-ES.pdf" download="AlfonsoPatron_CV.pdf"><Badge>Descargar CV</Badge></a>  
+            <h1 class="text-white text-3xl md:text-4xl lg:text-5xl  font-bold flex flex-row gap-x-4 pb-4" >Hey, soy Alfonso<a class="flex justify-center items-center" href="/AlfonsoPatron-CV-ES.pdf" download="AlfonsoPatron_CV.pdf"><Badge>Desca´rgar CV</Badge></a>  
             </h1>
             <h2 class="text-xl lg:text-2xl text-white opacity-90 text-wrap max-w-[640px]">
                 <span>+2 Años de Experiencia.</span>
@@ -60,6 +64,19 @@ description ="Contrata a alfonso patron para crear tus aplicaciones moviles en i
             <Projects>
 
             </Projects>
+        </SectionContainer>
+
+        <SectionContainer id="contacto">
+            <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80">
+                <ProfileCheck class="size-7" />
+                Sobre Mi
+             </h2>
+
+             <ContactToMe>
+
+             </ContactToMe>
+      
+            
         </SectionContainer>
     </main>
 </Layout>
