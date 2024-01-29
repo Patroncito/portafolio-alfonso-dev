@@ -1,6 +1,14 @@
 ---
 
 import Swift from "../icons/Swift.astro"
+import MySQL from "../icons/Mysql.astro"
+import NodeJS from "../icons/Nodejs.astro"
+import React from "../icons/ReactIcon.astro"
+import Figma from "../icons/Figma.astro"
+import Postman from "../icons/Postman.astro"
+
+
+
 
 const TAGSICONS = {
 
@@ -18,6 +26,36 @@ const TAGSICONS = {
         name: "Swift Data",
         class: "bg-[#8095a3] text-white",
         icon: Swift
+    },
+    MYSQL : {
+        name: "MySQL",
+        class: "bg-[#2e658b] text-white",
+        icon: MySQL
+    },
+    NODE : {
+      name: "Node.js",
+      class: "bg-[#669c4f] text-white",
+      icon : NodeJS
+    } , 
+    EXPRESS :{
+      name: "Express.js",
+      class: "bg-[#222222] text-white",
+      icon : NodeJS
+    }, 
+    REACT : {
+      name: "React",
+      class: "bg-[#387ca0] text-white",
+      icon: React
+    }, 
+    FIGMA : {
+      name: "Figma",
+      class: "bg-[#1e2433] text-white",
+      icon: Figma
+    }, 
+    POSTMAN : {
+      name: "Postman",
+      class: "bg-[#ed7547] text-white",
+      icon: Postman
     }
 
 
@@ -26,10 +64,24 @@ const TAGSICONS = {
 const PROJECTS = [
     {
         title: "Dilo con Señas - Aprende Lenguaje de Señas",
-        description:"Este proyecto de Swift es una aplicación móvil interactiva diseñada para ayudar a las personas a aprender el lenguaje de señas a través de un juego de quiz y una sección de aprendizaje tipo diccionario.",
+        description:"Aplicación móvil diseñada con apoyo de instituciones publicas para ayudar a las personas a aprender el lenguaje de señas. Con una sección de aprendizaje con imagenes y videos de señas consumidos por ApiREST, sección de jugar mediante categorias de dificultad variable.",
         image: "/ss-1.webp",
         github: "https://github.com/Patroncito/manosquehablan",
-        tags: [TAGSICONS.SWIFT, TAGSICONS.SWIFTUI, TAGSICONS.SWIFTDATA]
+        tags: [TAGSICONS.SWIFT, TAGSICONS.SWIFTUI, TAGSICONS.SWIFTDATA, TAGSICONS.FIGMA]
+    },
+    {
+        title: "RV & CO Clients - Bienes Raíces",
+        description:"Desarrollado en Swift y React, La tarea principal es generar y reservar citas con clientes de bienes raíces. Caracteristicas:  Filtrar y buscar por categoria, con MapKit buscar marcadores de las propiedades, añadir a favoritos, recibir notificaciones de cita proxima.",
+        image: "/ss-2.webp",
+        github: "https://github.com/Patroncito/manosquehablan",
+        tags: [TAGSICONS.SWIFT, TAGSICONS.SWIFTUI, TAGSICONS.SWIFTDATA, TAGSICONS.REACT, TAGSICONS.POSTMAN]
+    },
+    {
+        title: "Notus - Guarda tus notas en la nube",
+        description:"Aplicación desarrollada en Swift y SwiftUI para añadir, editar, buscar y eliminar notas en la nube, con caracteristicas como filtrar por categoria, teniendo acceso desde la aplicación Notus, o  desde el navegador. Los datos son consumidos mediante llamadas al backend, desarrollado con Node.js y Express, junto con una base de datos MySQL",
+        image: "/ss-3.webp",
+        github: "https://github.com/Patroncito/manosquehablan",
+        tags: [TAGSICONS.SWIFT, TAGSICONS.SWIFTUI, TAGSICONS.SWIFTDATA, TAGSICONS.MYSQL, TAGSICONS.NODE, TAGSICONS.EXPRESS]
     }
 ]
 ---
